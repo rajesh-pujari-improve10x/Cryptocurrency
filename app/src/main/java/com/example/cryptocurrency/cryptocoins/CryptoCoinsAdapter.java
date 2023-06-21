@@ -39,7 +39,6 @@ public class CryptoCoinsAdapter extends RecyclerView.Adapter<CryptoCoinViewHolde
     public void onBindViewHolder(@NonNull CryptoCoinViewHolder holder, int position) {
         CryptoCoin cryptoCoin = cryptoCoins.get(position);
         holder.binding.setCryptocoin(cryptoCoin);
-        holder.binding.setShowactive(showActive);
     }
 
     @Override

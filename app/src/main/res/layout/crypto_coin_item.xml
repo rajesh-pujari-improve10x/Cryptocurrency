@@ -6,12 +6,6 @@
         <variable
             name="cryptocoin"
             type="com.example.cryptocurrency.models.CryptoCoin" />
-        <variable
-            name="showactive"
-            type="Boolean" />
-        <import type="android.view.View">
-
-        </import>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -54,9 +48,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             android:layout_marginBottom="18dp"
-            android:text="active"
+            android:text="@{cryptocoin.active ? `active` : `deactive`}"
             android:textColor="@color/green"
-            android:visibility="@{showactive ? View.VISIBLE : View.GONE}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
